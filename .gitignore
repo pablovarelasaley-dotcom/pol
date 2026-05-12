@@ -1,0 +1,32 @@
+# Entorno virtual
+venv/
+
+# Thumbnails generadas automáticamente
+thumbnails/*
+!thumbnails/.gitkeep
+
+# Contenido del usuario (van en el Pi, no en el repo)
+LOGO/*
+!LOGO/.gitkeep
+videos/*
+!videos/.gitkeep
+
+# Python
+__pycache__/
+**/__pycache__/
+*.py[cod]
+
+# Kivy
+.kivy/
+
+# Sistema operativo
+.DS_Store
+Thumbs.db
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+
+# Claude Code (configuración local del editor)
+.claude/

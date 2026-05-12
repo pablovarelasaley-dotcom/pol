@@ -1,0 +1,6 @@
+# Todos los archivos de texto con LF, excepto Windows-specific
+* text=auto eol=lf
+
+# install.sh siempre LF (se corre en Linux)
+install.sh text eol=lf
+start.sh   text eol=lf
