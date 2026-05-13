@@ -17,6 +17,7 @@ from kivy.uix.screenmanager import ScreenManager, NoTransition
 from kivy.core.window import Window
 from kivy.utils import get_color_from_hex
 
+from src.utils.touch_calibration import aplicar_calibracion
 from src.screens.menu_screen import MenuScreen
 from src.screens.logo_screen import LogoScreen
 from src.screens.gallery_screen import GalleryScreen
@@ -40,6 +41,7 @@ class MultimediaApp(MDApp):
 
     def on_start(self):
         Window.clearcolor = COLOR_FONDO
+        aplicar_calibracion()   # no-op si touch_calibration.json no existe
 
 
 if __name__ == '__main__':

@@ -19,6 +19,9 @@ __pycache__/
 # Kivy
 .kivy/
 
+# Calibración táctil (específica de cada dispositivo)
+touch_calibration.json
+
 # Sistema operativo
 .DS_Store
 Thumbs.db
